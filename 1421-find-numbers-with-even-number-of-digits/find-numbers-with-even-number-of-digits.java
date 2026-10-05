@@ -4,11 +4,11 @@ class Solution {
         for(int i=0;i<nums.length;i++)
         {
         int digit=0;
-           while(nums[i]!=0)
+        int n=nums[i];
+           while(n!=0)
            {
-            int n=nums[i]%10;
             digit++;
-            nums[i]/=10;
+            n/=10;
            }
             if(digit%2==0)
             {
